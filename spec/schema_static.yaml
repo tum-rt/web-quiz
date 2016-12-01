@@ -67,6 +67,6 @@ task_chunk_text:
     task_text: include("answers_text")
 answers_text:
     before: str(required=False) # maybe it should be required
-    correct_answers: list(str(), min=1)
+    correct_answers: list(str(), min=1) # the first element will be displayed as the correct one
     max_len: num(min=1) # max. length of the text input, at least 1 char
     after: str(required=False) # e.g. for units
