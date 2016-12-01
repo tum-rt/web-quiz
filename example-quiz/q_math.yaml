@@ -21,7 +21,7 @@ content:
     \frac{(4k)!(1103+26390k)}{(k!)^{4} 396^{4k}}
     $
 - task_text:
-    correct_answer: Ramanujan
+    correct_answers: [Ramanujan]
     max_len: 20
 - separator
 - text: "Compute the following matrix product:"

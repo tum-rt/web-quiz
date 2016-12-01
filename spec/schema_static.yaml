@@ -8,6 +8,7 @@ content: >-
         include("header3_chunk"),
         include("text_chunk"),
         include("hint_chunk"),
+        include("afterword_chunk"),
         include("image_chunk"),
         include("task_chunk_mc_one_correct"),
         include("task_chunk_mc_multiple_correct"),
@@ -31,6 +32,9 @@ text_chunk:
 
 hint_chunk:
     hint: str()
+
+afterword_chunk:
+    afterword: str()
 
 image_chunk:
     image: str()
@@ -56,13 +60,13 @@ answers_number:
     before: str(required=False) # maybe it should be required
     correct_answer: num()
     abs_tol: num(min=0) # tolerance must be non-negative
-    after: str(required=False) # just in case, e.g. for units
+    after: str(required=False) # e.g. for units
 
 # Task: Enter text
 task_chunk_text:
     task_text: include("answers_text")
 answers_text:
     before: str(required=False) # maybe it should be required
-    correct_answer: str()
+    correct_answers: list(str(), min=1)
     max_len: num(min=1) # max. length of the text input, at least 1 char
-    after: str(required=False) # just in case, e.g. for units
+    after: str(required=False) # e.g. for units
