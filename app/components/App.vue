@@ -78,9 +78,10 @@ export default {
 
                 if(snippet.task_text) {
                     const task = snippet.task_text;
-                    const trimmedUserAnswer = userAnswer.trim();
+                    const trimmedUserAnswer = userAnswer ? userAnswer.trim() : "";
                     task.user_answer = trimmedUserAnswer;
-                    task.user_correct = task.correct_answers.indexOf(trimmedUserAnswer) > -1;
+                    task.user_correct =
+                        task.correct_answers.indexOf(trimmedUserAnswer) > -1;
                     totalTasks ++;
                     correctTasks += task.user_correct ? 1 : 0;
                 } else if(snippet.task_number) {

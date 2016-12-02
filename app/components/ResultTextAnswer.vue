@@ -5,7 +5,7 @@
     </span>
     <input readonly :value="snippet.user_answer" class="form-input"
         :style="style"/>
-    <input readonly :value="snippet.correct_answers[0]" class="form-input"
+    <input readonly :value="answer" class="form-input"
         v-if="!snippet.user_correct" />
     <span v-if="snippet.after" class="input-group-addon">
         <fl-text :value="snippet.after" />
@@ -26,6 +26,10 @@ export default {
                 "background-color": this.snippet.user_correct ?
                     "#8A97F9" : "#FFA500"
             };
+        },
+        answer: function() {
+            return this.snippet.correct_answer ?
+                this.snippet.correct_answer : this.snippet.correct_answers[0];
         }
     },
     components: {
