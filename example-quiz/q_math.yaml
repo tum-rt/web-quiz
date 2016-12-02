@@ -23,6 +23,10 @@ content:
 - task_text:
     correct_answers: [Ramanujan]
     max_len: 20
+- afterword: >
+    Srinivasa Ramanujan (22 December 1887 – 26 April 1920) was an Indian mathematician
+    renown for his contributions to mathematical analysis, number theory,
+    infinite series and continued fractions.
 - separator
 - text: "Compute the following matrix product:"
 - text: >

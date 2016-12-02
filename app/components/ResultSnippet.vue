@@ -3,6 +3,9 @@
     <div v-if="snippet.text" class="form-group mt-10">
         <label class="form-label"><fl-text :value="snippet.text" /></label>
     </div>
+    <div v-if="snippet.afterword" class="form-group mt-10">
+        <label class="form-label"><fl-text :value="snippet.afterword" /></label>
+    </div>
     <h4 v-if="snippet.header1">
         <fl-text :value="snippet.header1" />
     </h4>
