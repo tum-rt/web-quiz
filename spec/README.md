@@ -26,7 +26,7 @@ in this document are to be interpreted as described in
 
 ### File format
 * Questions MUST be specified in YAML markup format.
-* Question filename MUST match to `q_*.yaml` pattern (`fnmatch`).
+* Question filename MUST match to `[!_]*.yml` pattern (`fnmatch`).
 * File encoding MUST be UTF-8.
 * Files MUST have exactly one empty newline at the end.
 * Files MUST have LF (`\n`) line endings.

@@ -14,7 +14,7 @@ import yaml
 def find_question_files(root_directory):
     """Yield all YAML files recursively."""
     for root, _, files in os.walk(root_directory):
-        for basename in fnmatch.filter(files, "q_*.yaml"):
+        for basename in fnmatch.filter(files, "[!_]*.yml"):
             yield os.path.join(root, basename)
 
 
