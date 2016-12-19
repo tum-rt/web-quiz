@@ -7,7 +7,7 @@ $ pip install -r requirements.txt
 
 ## Usage
 ```sh
-$ python validate_question.py schema_static.yaml ../example-quiz/
+$ python validate_question.py schema_static.yml ../example-quiz/
 ```
 
 # Question format
