@@ -29,7 +29,7 @@ install:
   - npm install
 
 script:
-  - python ./spec/validate_question.py "./spec/schema_static.yaml" "./example-quiz/"
+  - python ./spec/validate_question.py "./spec/schema_static.yml" "./example-quiz/"
   - npm run build
   - npm run doc
   - npm run coverage
