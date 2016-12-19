@@ -1,6 +1,4 @@
 node_modules/
-cache/
 apidoc/
 static/
-example-quiz/_cache/
-example-quiz/.cache/
+.cache/
