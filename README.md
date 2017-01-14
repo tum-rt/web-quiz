@@ -21,7 +21,7 @@ Requirements: Node.js >= 6.x
 ```sh
 git clone https://github.com/tum-rt/web-quiz.git
 cd web-quiz
-npm install
+yarn
 npm run build
 npm run dev
 ```

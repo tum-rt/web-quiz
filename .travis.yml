@@ -25,9 +25,6 @@ before_install:
   - source pyvalidator/bin/activate
   - pip install -r ./spec/requirements.txt
 
-install:
-  - npm install
-
 script:
   - python ./spec/validate_question.py "./spec/schema_static.yml" "./example-quiz/"
   - npm run build
