@@ -18,6 +18,9 @@
 
 Requirements: Node.js >= 6.x
 
+We use [Yarn](https://yarnpkg.com/) for package management.
+Please install it as described [here](https://yarnpkg.com/en/docs/install).
+
 ```sh
 git clone https://github.com/tum-rt/web-quiz.git
 cd web-quiz
