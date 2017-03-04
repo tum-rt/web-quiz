@@ -30,7 +30,7 @@
     "mathjax-node": "^0.5.1",
     "mkdirp": "^0.5.1",
     "pug": "^2.0.0-beta6",
-    "spectre.css": "^0.1.27",
+    "spectre.css": "^0.2.7",
     "style-loader": "^0.13.1",
     "svgo": "^0.7.1",
     "ts-loader": "^2.0.0",
