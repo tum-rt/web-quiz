@@ -28,5 +28,6 @@ export default {}
     top: 0;
     background-color: white;
     border-bottom: 1px solid black;
+    margin: 0;
 }
 </style>
