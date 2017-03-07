@@ -1,6 +1,6 @@
 declare var require: any;
 
-import * as Vue from "vue";
+import Vue from "vue";
 const FlavoredText = require("../components/FlavoredText.vue").default;
 import { expect } from "chai";
 

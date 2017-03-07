@@ -1,6 +1,6 @@
 declare var require: any;
 
-import * as Vue from "vue";
+import Vue from "vue";
 const Progress = require("../components/Progress.vue").default;
 import { expect } from "chai";
 

@@ -1,6 +1,6 @@
 declare var require: any;
 
-import * as Vue from "vue";
+import Vue from "vue";
 const Snippet = require("../components/Snippet.vue").default;
 import { expect } from "chai";
 
