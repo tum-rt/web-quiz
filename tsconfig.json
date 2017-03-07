@@ -1,7 +1,10 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "sourceMap": true
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "module": "es2015",
+        "moduleResolution": "node"
     },
     "compileOnSave": false
 }

@@ -5,11 +5,11 @@ require("spectre.css/dist/spectre.min.css");
 require("./fontello/css/webquiz.css");
 require("./quiz.css");
 
-import * as Vue from 'vue';
+import Vue from "vue";
 import config from "./config";
 import {prewarmTagsWithCountCache} from "./api";
 const VueI18n = require("vue-i18n");
-const App = require('./components/App.vue').default;
+const App = require("./components/App.vue").default;
 
 prewarmTagsWithCountCache([], JSON.parse(document.getElementById("tags_with_count").innerHTML));
 
