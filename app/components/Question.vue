@@ -11,7 +11,7 @@
         </div>
     </navbar>
     <form @submit.prevent>
-        <snippet v-for="(snippet, index) in content"
+        <snippet v-for="(snippet, index) in content" :key="index"
             :snippet="snippet" :index="index" @input="input" />
     </form>
     <button class="btn btn-primary btn-block" style="margin-top:3rem;" @click="submit">{{ $t("submit_answers") }}</button>

@@ -4,7 +4,7 @@
         <div class="columns">
             <div class="column col-10">
                 <div class="btn-group btn-group-block">
-                    <button  v-for="(question, index) in questions"
+                    <button  v-for="(question, index) in questions" :key="index"
                         class="btn" @click="scrollTo(index)">{{ index + 1 }}</button>
                 </div>
             </div>
@@ -17,7 +17,7 @@
     <form @submit.prevent>
         <template v-for="(question, index) in questions">
             <h3 ref="header">{{ $t("question_x_result", {num: index + 1, correct: question.correct_tasks, total: question.total_tasks }) }}</h3>
-            <snippet v-for="snippet in question.content" :snippet="snippet" />
+            <snippet v-for="snippet in question.content" :key="index" :snippet="snippet" />
         </template>
     </form>
 </div>
