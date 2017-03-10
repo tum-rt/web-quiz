@@ -16,7 +16,7 @@
         <fl-text :value="snippet.header3" />
     </h6>
     <div v-if="snippet === 'separator'" class="divider"></div>
-    <img v-if="snippet.image" :src="snippet.image" class="img-responsive" />
+    <resp-img v-if="snippet.image" :snippet="snippet.image" />
     <div v-if="snippet.hint" class="toast">
         <fl-text :value="snippet.hint" />
     </div>
@@ -41,13 +41,15 @@ declare var require: any;
 const FlavoredText = require("./FlavoredText.vue").default;
 const MCAnswer = require("./ResultMCAnswer.vue").default;
 const TextAnswer = require("./ResultTextAnswer.vue").default;
+const ResponsiveImage = require("./ResponsiveImage.vue").default;
 
 export default {
     props: ["snippet"],
     components: {
         "fl-text": FlavoredText,
         "mc-answer": MCAnswer,
-        "text-answer": TextAnswer
+        "text-answer": TextAnswer,
+        "resp-img": ResponsiveImage
     }
 }
 </script>

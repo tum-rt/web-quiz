@@ -13,7 +13,7 @@
         <fl-text :value="snippet.header3" />
     </h6>
     <div v-if="snippet === 'separator'" class="divider"></div>
-    <img v-if="snippet.image" :src="snippet.image" class="img-responsive" />
+    <resp-img v-if="snippet.image" :snippet="snippet.image" />
     <div v-if="snippet.hint" class="hint">
         <button v-show="!showHint" class="btn btn-block" @click="triggerHint">{{ $t("show_hint") }}</button>
         <span v-show="showHint" class="toast">
@@ -63,6 +63,7 @@
 declare var require: any;
 
 const FlavoredText = require("./FlavoredText.vue").default;
+const ResponsiveImage = require("./ResponsiveImage.vue").default;
 
 export default {
     data() {
@@ -95,7 +96,8 @@ export default {
         }
     },
     components: {
-        "fl-text": FlavoredText
+        "fl-text": FlavoredText,
+        "resp-img": ResponsiveImage
     }
 }
 </script>
