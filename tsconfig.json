@@ -2,7 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "sourceMap": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "es6",
+            "dom"
+        ]
     },
     "compileOnSave": false
 }

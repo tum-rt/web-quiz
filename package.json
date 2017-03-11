@@ -48,8 +48,8 @@
     "url": "https://github.com/tum-rt/web-quiz.git"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.34",
-    "@types/mocha": "^2.2.37",
+    "@types/core-js": "^0.9.37",
+    "@types/mocha": "^2.2.40",
     "apidoc": "^0.17.0",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
