@@ -37,7 +37,11 @@ afterword_chunk:
     afterword: str()
 
 image_chunk:
-    image: str()
+    image: any(str(),include("image_attributes"))
+image_attributes:
+    src: str()
+    srcset: map(str(), str(), required=False)
+    alt: str(required=False)
 
 # Task: Multiple choice, one correct answer
 task_chunk_mc_one_correct:
