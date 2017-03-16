@@ -110,6 +110,13 @@ content:
     wrong_answers:
     - Internet Explorer
     - Lynx
+- image:
+    src: http://example.org/image-100.png
+    srcset:
+      http://example.org/image-100.png: 1x
+      http://example.org/image-200.png: 2x
+      http://example.org/image-400.png: 4x
+    alt: Images with resolution density support
 ```
 
 You can find further examples in the `example-quiz` folder of this project.
