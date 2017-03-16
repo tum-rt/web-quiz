@@ -2,6 +2,13 @@ uid: github
 tags: [development]
 content:
 - text: Every developer knows GitHub. But how much do you know about it?
+- image:
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/GitHub_logo_2013.svg/400px-GitHub_logo_2013.svg.png"
+    srcset:
+      https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/GitHub_logo_2013.svg/400px-GitHub_logo_2013.svg.png: 1x
+      https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/GitHub_logo_2013.svg/800px-GitHub_logo_2013.svg.png: 2x
+      https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/GitHub_logo_2013.svg/1600px-GitHub_logo_2013.svg.png: 4x
+    alt: Github Logo
 - text: What is the programming language with most active repositories?
 - task_mc_one_correct:
     correct_answer:
