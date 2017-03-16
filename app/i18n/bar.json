@@ -1,0 +1,14 @@
+{
+    "close": "Zua macha",
+    "submit_answers": "Froge obschliaßn",
+    "cancel": "Obbrechn",
+    "close_quiz": "Quiz schliaßn",
+    "close_quiz_hint": "Wennsd des machst, dann kimmst nimma zruck. Dei Foatschritt werd ned gspeichert.",
+    "results": "Eagebnisse ({percent} %)",
+    "question_x_result": "Froge {num} ({correct} / {total})",
+    "start_quiz": "Pack ma's!",
+    "about": "Üba des Quiz",
+    "select_topics": "Weichane vo den Themen mogst du denn?",
+    "there_are_x_questions": "Oane Froge hob i gfundn.|I hob {count} Frogn gfundn.",
+    "show_hint": "Hinweis ozeign"
+}
