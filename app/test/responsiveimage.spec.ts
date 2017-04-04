@@ -14,48 +14,34 @@ describe("ResponsiveImage.vue", () => {
         }).$mount();
     };
 
-    it("should render simple image", () => {
-        const vm = buildRespImg("http://example.org/test.png");
-
-        const img = <HTMLImageElement>vm.$el;
-        expect(img.src).to.equal("http://example.org/test.png");
-    });
-
-    it("should render simple image with object syntax", () => {
+    it("should render simple image with description", () => {
         const vm = buildRespImg({
-            src: "http://example.org/test.png"
+            description: "My Test Image",
+            source_1x: "http://example.org/test.png"
         });
 
         const img = <HTMLImageElement>vm.$el;
         expect(img.src).to.equal("http://example.org/test.png");
+        expect(img.alt).to.equal("My Test Image");
     });
 
     it("should render image with srcset attribute", () => {
         const vm = buildRespImg({
-            src: "http://example.org/test.png",
-            srcset: {
-                "http://example.org/test-small.png": "1x",
-                "http://example.org/test-large.png": "2x"
-            }
+            description: "My Responsive Image",
+            source_1x: "http://example.org/test-1x.png",
+            source_2x: "http://example.org/test-2x.png",
+            source_4x: "http://example.org/test-4x.png"
         });
 
         const img = <HTMLImageElement>vm.$el;
-        expect(img.src).to.equal("http://example.org/test.png");
-        expect(img.srcset).to.contain("http://example.org/test-small.png");
-        expect(img.srcset).to.contain("http://example.org/test-large.png");
+        expect(img.alt).to.equal("My Responsive Image");
+        expect(img.src).to.equal("http://example.org/test-1x.png");
+        expect(img.srcset).to.contain("http://example.org/test-1x.png");
+        expect(img.srcset).to.contain("http://example.org/test-2x.png");
+        expect(img.srcset).to.contain("http://example.org/test-4x.png");
         expect(img.srcset).to.contain("1x");
         expect(img.srcset).to.contain("2x");
+        expect(img.srcset).to.contain("4x");
         expect(img.srcset).to.contain(",");
-    });
-
-    it("should render image with alt attribute", () => {
-        const vm = buildRespImg({
-            src: "http://example.org/test.png",
-            alt: "Description text"
-        });
-
-        const img = <HTMLImageElement>vm.$el;
-        expect(img.src).to.equal("http://example.org/test.png");
-        expect(img.alt).to.equal("Description text");
     });
 });

@@ -48,10 +48,14 @@ describe("Snippet.vue", () => {
 
     it("should render image snippet", () => {
         const vm = buildSnippet({
-            image: "/graph.png"
+            image: {
+                description: "Image Snippet",
+                source_1x: "/graph.png"
+            }
         });
 
         expect(vm.$el.querySelector("img")).to.not.be.null;
+        expect(vm.$el.querySelector("img").alt).to.equal("Image Snippet");
         expect(vm.$el.querySelector("img").src).to.contain("/graph.png");
     });
 
