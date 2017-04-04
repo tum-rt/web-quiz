@@ -36,12 +36,14 @@ hint_chunk:
 afterword_chunk:
     afterword: str()
 
+# Responsive Image
 image_chunk:
-    image: any(str(),include("image_attributes"))
+    image: include("image_attributes")
 image_attributes:
-    src: str()
-    srcset: map(str(), str(), required=False)
-    alt: str(required=False)
+    description: str()
+    source_1x: str()
+    source_2x: str(required=False)
+    source_4x: str(required=False)
 
 # Task: Multiple choice, one correct answer
 task_chunk_mc_one_correct:

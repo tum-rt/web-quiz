@@ -6,8 +6,10 @@ uid: animals
 tags: [animals]
 content:
 - header1: How good do you know animals?
-- image: https://syncandshare.lrz.de/dl/fi4KvLNE2142swgfxjtEUCta/golden_retriever.jpg
-  # https://pixabay.com/en/dog-golden-retriever-concerns-out-1192029/
+- image:
+    description: Doggie
+    # https://pixabay.com/en/dog-golden-retriever-concerns-out-1192029/
+    source_1x: https://syncandshare.lrz.de/dl/fi4KvLNE2142swgfxjtEUCta/golden_retriever.jpg
 - text: This is a...
 - task_mc_one_correct:
     correct_answer:
@@ -17,8 +19,10 @@ content:
     - Siberian Husky
     - Scotch Collie
 - separator
-- image: https://syncandshare.lrz.de/dl/fiDpxA7oU6XqhTFufgGhcgnm/meerkat.jpg
-  # https://pixabay.com/en/alert-animal-cute-fur-hair-look-165009/
+- image:
+    description: Furry
+    # https://pixabay.com/en/alert-animal-cute-fur-hair-look-165009/
+    source_1x: https://syncandshare.lrz.de/dl/fiDpxA7oU6XqhTFufgGhcgnm/meerkat.jpg
 - text: This is a...
 - task_mc_one_correct:
     correct_answer:
@@ -31,8 +35,10 @@ content:
     - Desert pocket mouse
     - Hare
 - separator
-- image: https://syncandshare.lrz.de/dl/fiCSc9QVE3zDUmYWLrJ7xYtL/orcas.jpg
-  # https://pixabay.com/en/killer-whales-orcas-breaching-591130/
+- image:
+    description: Fishy
+    # https://pixabay.com/en/killer-whales-orcas-breaching-591130/
+    source_1x: https://syncandshare.lrz.de/dl/fiCSc9QVE3zDUmYWLrJ7xYtL/orcas.jpg
 - text: These are...
 - task_mc_one_correct:
     correct_answer:
@@ -42,8 +48,10 @@ content:
     - Manatees
     - Seals
 - separator
-- image: https://syncandshare.lrz.de/dl/fiYCqQ2Mc8vAGKH9DnLzkrUb/penguins.jpg
-  # https://pixabay.com/en/penguins-emperor-antarctic-life-429128/
+- image:
+    description: Penguin
+    # https://pixabay.com/en/penguins-emperor-antarctic-life-429128/
+    source_1x: https://syncandshare.lrz.de/dl/fiYCqQ2Mc8vAGKH9DnLzkrUb/penguins.jpg
 - text: These are...
 - task_mc_one_correct:
     correct_answer:

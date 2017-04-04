@@ -1,32 +1,17 @@
 <template>
-    <img class="img-responsive" :src="src" :srcset="srcset" :alt="alt" />
+    <img class="img-responsive" :src="snippet.source_1x" :srcset="srcset"
+        :alt="snippet.description" />
 </template>
 
 <script>
-const isString = (x) => typeof x === "string";
-
 export default {
     props: ["snippet"],
     computed: {
         srcset() {
-            if(isString(this.snippet) || !this.snippet.srcset) {
-                return "";
-            }
-            return Object.keys(this.snippet.srcset).map((key) => {
-                return `${key} ${this.snippet.srcset[key]}`;
-            }).join(",");
-        },
-        src() {
-            if(isString(this.snippet)) {
-                return this.snippet;
-            }
-            return this.snippet.src;
-        },
-        alt() {
-            if(isString(this.snippet) || !this.snippet.alt) {
-                return "";
-            }
-            return this.snippet.alt;
+            return ["1x", "2x", "4x"]
+                .filter((key) => this.snippet[`source_${key}`])
+                .map((key) => `${this.snippet["source_" + key]} ${key}`)
+                .join(",");
         }
     }
 }

@@ -6,15 +6,13 @@ content:
 - header1: Have you seen our responsive images?
 - text: "This is a responsive image (try resizing your browser window):"
 - image:
-    src: "https://syncandshare.lrz.de/dl/fiM2p2y7HovkgzxrMmxznS9a/small_cat.jpg"
-    srcset:
-      https://syncandshare.lrz.de/dl/fiM2p2y7HovkgzxrMmxznS9a/small_cat.jpg: 1x
-      # https://pixabay.com/en/kitty-cat-kitten-pet-animal-cute-551554/
-      https://syncandshare.lrz.de/dl/fiEz3xz57UP1Wdob5GNibhBm/medium_cat.jpg: 2x
-      # https://pixabay.com/en/cat-female-adidas-fur-mackerel-1940487/
-      https://syncandshare.lrz.de/dl/fiWQMiDDPsx2T46Koc3wrDY1/large_cat.jpg: 4x
-      # https://pixabay.com/en/main-coon-cat-large-animal-264321/
-    alt: Responsive cats
+    description: Responsive cats
+    # https://pixabay.com/en/kitty-cat-kitten-pet-animal-cute-551554/
+    source_1x: https://syncandshare.lrz.de/dl/fiM2p2y7HovkgzxrMmxznS9a/small_cat.jpg
+    # https://pixabay.com/en/cat-female-adidas-fur-mackerel-1940487/
+    source_2x: https://syncandshare.lrz.de/dl/fiEz3xz57UP1Wdob5GNibhBm/medium_cat.jpg
+    # https://pixabay.com/en/main-coon-cat-large-animal-264321/
+    source_4x: https://syncandshare.lrz.de/dl/fiWQMiDDPsx2T46Koc3wrDY1/large_cat.jpg
 - text: Isn't it awesome?
 - task_mc_one_correct:
     correct_answer:
