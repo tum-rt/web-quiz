@@ -4,7 +4,7 @@ uid: animals_responsive
 tags: [animals]
 content:
 - header1: Have you seen our responsive images?
-- text: "This is a responsive image (try resizing your browser window):"
+- text: "This is a responsive image:"
 - image:
     description: Responsive cats
     # https://pixabay.com/en/kitty-cat-kitten-pet-animal-cute-551554/
@@ -13,6 +13,10 @@ content:
     source_2x: https://syncandshare.lrz.de/dl/fiEz3xz57UP1Wdob5GNibhBm/medium_cat.jpg
     # https://pixabay.com/en/main-coon-cat-large-animal-264321/
     source_4x: https://syncandshare.lrz.de/dl/fiWQMiDDPsx2T46Koc3wrDY1/large_cat.jpg
+- text: >
+    You can test it by opening a new browser tab and changing the device pixel ratio (DPR)
+    in the developer console. Notice that you should change your DPR before loading the quiz!
+- separator
 - text: Isn't it awesome?
 - task_mc_one_correct:
     correct_answer:
