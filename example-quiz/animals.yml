@@ -7,7 +7,7 @@ tags: [animals]
 content:
 - header1: How good do you know animals?
 - image:
-    description: Doggie
+    description: A dog
     # https://pixabay.com/en/dog-golden-retriever-concerns-out-1192029/
     source_1x: https://syncandshare.lrz.de/dl/fi4KvLNE2142swgfxjtEUCta/golden_retriever.jpg
 - text: This is a...
@@ -20,7 +20,7 @@ content:
     - Scotch Collie
 - separator
 - image:
-    description: Furry
+    description: A small rodent
     # https://pixabay.com/en/alert-animal-cute-fur-hair-look-165009/
     source_1x: https://syncandshare.lrz.de/dl/fiDpxA7oU6XqhTFufgGhcgnm/meerkat.jpg
 - text: This is a...
@@ -36,7 +36,7 @@ content:
     - Hare
 - separator
 - image:
-    description: Fishy
+    description: A group of marine mammals
     # https://pixabay.com/en/killer-whales-orcas-breaching-591130/
     source_1x: https://syncandshare.lrz.de/dl/fiCSc9QVE3zDUmYWLrJ7xYtL/orcas.jpg
 - text: These are...
@@ -49,7 +49,7 @@ content:
     - Seals
 - separator
 - image:
-    description: Penguin
+    description: A group of aquatic birds
     # https://pixabay.com/en/penguins-emperor-antarctic-life-429128/
     source_1x: https://syncandshare.lrz.de/dl/fiYCqQ2Mc8vAGKH9DnLzkrUb/penguins.jpg
 - text: These are...
