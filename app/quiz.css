@@ -8,6 +8,10 @@ div.divider {
     margin-bottom: 2rem;
 }
 
+div.nav {
+    z-index: auto;
+}
+
 .nav-title {
     font-size: 2rem;
     height: 3.2rem;
