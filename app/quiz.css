@@ -9,7 +9,7 @@ div.divider {
 }
 
 div.nav {
-    z-index: auto;
+    z-index: 300;
 }
 
 .nav-title {
